@@ -168,8 +168,8 @@
         // Тут не розумію, чого не працює інтерполяція? ${}
                 let message1 = "Привіт, мене звати ${nameNew}. Я працюю на посаді ${position} в компанії ${company}.";
                 let message2 = "Привіт, мене звати " + nameNew +". Я працюю на посаді " + position + " в компанії " + company;
-                console.log(message);
                 console.log(message1);
+                console.log(message2);
         
         // let name23 = "Анна";
         // let greetings = `Привіт, ${name23}!`;
