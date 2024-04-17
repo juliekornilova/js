@@ -1,13 +1,25 @@
 //Скільки тобі років? З перевіркою на число.
 
 // let age = prompt('Скільки вам років?', 100);
-let age ="a";
+let age = 20;
 console.log(age);
-if (typeof(age)) {console.log("Number is correct " + typeof age)}
-else {console.log("Please, enter the Number")};
-if (age == 1) console.log(`Вам ${age} рік!`); // Чому він не перевіряє умову не розумію?
-if (2<= age <=4) console.log(`Вам ${age} роки!`);
-if (4< age <=20) console.log(`Вам ${age} років!`);
+if (isNaN(age)) {
+  console.log("Будь ласка, введіть число");
+} else {
+    // Далі код для роботи з числом
+    if (age === 1) {
+    console.log(`Вам ${age} рік!`); // 1 Перевіряє. Ок. Чому він не перевіряє умову не розумію?
+    } else if (2<= age <=4) {
+      console.log(`Вам ${age} роки!`); //Перевіряє дужки 2 умови для 2,3,4 Ок
+    } else  {
+      console.log(`Вам ${age} років!`); //Чому він не перевіряє 3 умову не розумію? if (4< age <=20) if (4< age <=20) 
+    }
+  } 
+
+
+// if (typeof(age)) {console.log("Number is correct " + typeof age)}
+// else {console.log("Please, enter the Number")};
+
 
 
 
